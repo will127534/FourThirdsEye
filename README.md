@@ -26,4 +26,4 @@ For questions, issues, or suggestions, please open an issue in the [GitHub repos
 ![](https://github.com/will127534/FourThirdsEye/blob/2d40e392c67383d515081146fcd0cbcc5ac29037/SCH.jpg)
 
 ## PCB
-![]([https://github.com/will127534/FourThirdsEye/blob/2d40e392c67383d515081146fcd0cbcc5ac29037/PCB.jpg](https://github.com/will127534/FourThirdsEye/blob/2d40e392c67383d515081146fcd0cbcc5ac29037/PCB.JPG))
+![](https://github.com/will127534/FourThirdsEye/blob/2d40e392c67383d515081146fcd0cbcc5ac29037/PCB.JPG)
