@@ -17,6 +17,7 @@ FourThirdsEye captures 10.7 Mpix images and 4K (4096 x 2160) videos with improve
 * [Interactive BOM](https://htmlpreview.github.io/?https://github.com/will127534/FourThirdsEye/blob/main/ibom.html) [(provided by InteractiveHtmlBom)
 ](https://github.com/openscopeproject/InteractiveHtmlBom)
 * Driver for Raspberry Pi: [https://github.com/will127534/imx294-v4l2-driver](https://github.com/will127534/imx294-v4l2-driver)
+* 3D model and E-mount adaptor + Filter design is under /3D_model, note that you will need to grab the metal ring from a E-mount (lens extender or replacements parts) and mount it to the 3D printed adaptor.
 
 ## Sidenotes
 IMX294 with CSI-2 interface mode is running at 1.78Gbps, technically breaking the spec for RPI5 (1.5Gbps) and CM4 (1Gbps?...they didn't really state it clearly) but I have tested on both platforms and are both working properly. But the one catch is that FPC cable quality/length will impact the data transmition, I've see black/bad pixel data scattering in the frames with a long 50cm cable, but it is fine with the 20cm cable. Also to actually utilized the full capacity/FPS of the sensor on RPI5, you will need to overclock RP1 (Camera Frontend) so it can handle the sensor at 60 FPS 4K. The sensor itself is also quite interesting because it is actually a quad bayer array just with subpixel combined output only, it is technically capable of sending high/low gain frame output but I'm still waiting for the HDR support on RPI5 to actually test it.
@@ -33,3 +34,4 @@ For questions, issues, or suggestions, please open an issue in the [GitHub repos
 
 ## PCB
 ![](https://github.com/will127534/FourThirdsEye/blob/2d40e392c67383d515081146fcd0cbcc5ac29037/PCB.JPG)
+*Screw hole sizes are M3
