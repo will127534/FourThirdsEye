@@ -6,6 +6,8 @@ Welcome to the **FourThirdsEye** project, an open-source camera board designed f
 
 FourThirdsEye captures 10.7 Mpix images and 4K (4096 x 2160) videos with improved low-light performance and dynamic range (4.63 um pixel size). It's perfect for photography enthusiasts, developers, and makers who want to level up their Raspberry Pi projects with a powerful camera.
 
+Also see [Quick Start Guide](https://github.com/will127534/FourThirdsEye/wiki/FourThirdsEye-Quick-Start-Guide)
+
 ## Features
 * **Open-source hardware and software**
 * IMX294 sensor
