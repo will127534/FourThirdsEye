@@ -3,7 +3,7 @@
 
 
 ## Introduction
-Welcome to the **FourThirdsEye** project, an open-source camera board designed for Raspberry Pi 5 and Raspberry Pi Compute Module 4 boards using a Micro Four Thirds format image sensor IMX294. This project aims to provide a high-quality, affordable, and accessible camera module for advanced Raspberry Pi projects. The board is designed using KiCad v6, a popular open-source electronics design automation (EDA) software.
+Welcome to the **FourThirdsEye** project, an open-source camera board designed for Raspberry Pi 5 and Raspberry Pi Compute Module 4 boards using a Micro Four Thirds format image sensor IMX294. This project aims to provide a high-quality and accessible camera module for advanced Raspberry Pi projects. The board is designed using KiCad v8.
 
 FourThirdsEye captures 10.7 Mpix images and 4K (4096 x 2160) videos with improved low-light performance and dynamic range (4.63 um pixel size). It's perfect for photography enthusiasts, developers, and makers who want to level up their Raspberry Pi projects with a powerful camera.
 
@@ -13,6 +13,7 @@ Also see [Quick Start Guide](https://github.com/will127534/FourThirdsEye/wiki/Fo
 * **Open-source hardware and software**
 * IMX294 sensor
 * Integrated TMP117 temperature sensor
+* Integrated ICM-42688-P 6-axis IMU with FSYNC connected to sensor's VSYNC
 * Compatible with Raspberry Pi5 and Raspberry Pi Compute Module 4 boards with a 22-pin FPC connector and 4-lane MIPI-CSI (same pinout as Raspberry Pi Compute Module 4 IO Board)
 
 ## Notes
@@ -24,7 +25,7 @@ Also see [Quick Start Guide](https://github.com/will127534/FourThirdsEye/wiki/Fo
 * Limited amount on [Tindle](https://www.tindie.com/products/will123321/fourthirdeye-v10/) for sell
 
 ## Sidenotes
-IMX294 with CSI-2 interface mode is running at 1.78Gbps, technically breaking the spec for RPI5 (1.5Gbps) and CM4 (1Gbps?...they didn't really state it clearly) but I have tested on both platforms and are both working properly. But the one catch is that FPC cable quality/length will impact the data transmition, I've see black/bad pixel data scattering in the frames with a long 50cm cable, but it is fine with the 20cm cable. Also to actually utilized the full capacity/FPS of the sensor on RPI5, you will need to overclock RP1 (Camera Frontend) so it can handle the sensor at 60 FPS 4K. The sensor itself is also quite interesting because it is actually a quad bayer array just with subpixel combined output only, it is technically capable of sending high/low gain frame output but I'm still waiting for the HDR support on RPI5 to actually test it.
+IMX294 with CSI-2 interface mode is running at 1.78Gbps, technically breaking the spec for RPI5 (1.5Gbps) and CM4 (1Gbps?...they didn't really state it clearly) but I have tested on both platforms and are both working properly. But the one catch is that FPC cable quality/length will impact the data transmition, I've see black/bad pixel data scattering in the frames with a long 50cm cable, but it is fine with the 20cm cable. Also to actually utilized the full capacity/FPS of the sensor on RPI5, you will need to [overclock](https://www.willwhang.dev/Solar-eclipse-2024/#overclocking-the-rp1-for-enhanced-pisp-performance) RP1 (Camera Frontend) so it can handle the sensor at 60 FPS 4K. The sensor itself is also quite interesting because it is actually a quad bayer array just with subpixel combined output only, it is technically capable of sending high/low gain frame output but I'm still waiting for the HDR support on RPI5 to actually test it.
 
 As for the PCB board design, the goal is to make a miniaturized camera board, but because of that I have to use smaller via sizes (0.2mm) and via-in-pad for the decoupling capacitors. There is also a bunch of tiny common mode CSI-2 filter that it might be hard for hand soldering so PCBA services or stencil + paste is the perfer way to build it.
 
