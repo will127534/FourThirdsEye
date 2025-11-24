@@ -1,5 +1,6 @@
 # FourThirdsEye: Opensource Micro Four Thirds camera module based on IMX294
-![](https://github.com/will127534/FourThirdsEye/blob/2d40e392c67383d515081146fcd0cbcc5ac29037/PCBA.jpg)
+![_DSC0208](https://github.com/user-attachments/assets/43056d2f-bdce-4877-9f3b-0c7205750982)
+
 
 ## Introduction
 Welcome to the **FourThirdsEye** project, an open-source camera board designed for Raspberry Pi 5 and Raspberry Pi Compute Module 4 boards using a Micro Four Thirds format image sensor IMX294. This project aims to provide a high-quality, affordable, and accessible camera module for advanced Raspberry Pi projects. The board is designed using KiCad v6, a popular open-source electronics design automation (EDA) software.
@@ -19,7 +20,7 @@ Also see [Quick Start Guide](https://github.com/will127534/FourThirdsEye/wiki/Fo
 * [Interactive BOM](https://htmlpreview.github.io/?https://github.com/will127534/FourThirdsEye/blob/main/ibom.html) [(provided by InteractiveHtmlBom)
 ](https://github.com/openscopeproject/InteractiveHtmlBom)
 * Driver for Raspberry Pi: [https://github.com/will127534/imx294-v4l2-driver](https://github.com/will127534/imx294-v4l2-driver)
-* 3D model and E-mount adaptor + Filter design is under [/3D_model](/3D_model), note that you will need to grab the metal ring from a E-mount (lens extender or replacements parts) and mount it to the 3D printed adaptor.
+* 3D model for the board and sensor, C-mount adaptor and E-mount adaptor + Filter design is under [/3D_model](/3D_model), note that you will need to grab the metal ring from a E-mount (lens extender or replacements parts) and mount it to the 3D printed adaptor, for C-mount adaptor it is designed for CNC machine.
 * Limited amount on [Tindle](https://www.tindie.com/products/will123321/fourthirdeye-v10/) for sell
 
 ## Sidenotes
@@ -33,8 +34,8 @@ Last thing is that if you are looking to capture RAW videos with Raspberry Pi 5,
 For questions, issues, or suggestions, please open an issue in the [GitHub repository](https://github.com/will127534/FourThirdsEye/issues)
 
 ## Schematic
-![](https://github.com/will127534/FourThirdsEye/blob/2d40e392c67383d515081146fcd0cbcc5ac29037/SCH.jpg)
+![](https://github.com/will127534/FourThirdsEye/blob/main/SCH.JPG?raw=true)
 
 ## PCB
-![](https://github.com/will127534/FourThirdsEye/blob/2d40e392c67383d515081146fcd0cbcc5ac29037/PCB.JPG)
+![](https://github.com/will127534/FourThirdsEye/blob/main/PCB.JPG?raw=true)
 *Screw hole sizes are M3
